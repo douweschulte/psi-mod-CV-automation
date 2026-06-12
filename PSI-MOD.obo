@@ -21699,8 +21699,8 @@ xref: MassAvg: "174.223"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00848 ! reagent derivatized residue
 is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:01080
