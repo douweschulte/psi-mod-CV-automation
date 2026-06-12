@@ -9794,7 +9794,7 @@ synonym: "Anemonia majano fluorescent protein FP486 chromophore" EXACT RESID-alt
 synonym: "CROSSLNK 5-imidazolinone (Lys-Gly)" EXACT UniProt-feature []
 synonym: "L-lysine 5-imidazolinone glycine" EXACT RESID-name []
 synonym: "[2-(1,5-diaminopentanyl)-5-oxo-4,5-dihydro-imidazol-1-yl]-acetic acid" EXACT RESID-alternate []
-synonym: "lysyl-5-imidazolinone glycine" EXACT RESID-alternate []
+synonym: "lysyl-5-imidazolino ne glycine" EXACT RESID-alternate []
 synonym: "para-hydroxybenzylidene-imidazolidinone chromophore" EXACT RESID-alternate []
 xref: DiffAvg: "-18.02"
 xref: DiffFormula: "H -2 O -1"
