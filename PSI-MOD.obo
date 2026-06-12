@@ -21670,7 +21670,7 @@ synonym: "AEC-MAEC" RELATED Unimod-interim []
 synonym: "beta-methylaminoethylcysteine" RELATED Unimod-description []
 synonym: "S-aminoethyl-3-methylcysteine" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "59.13"
-xref: DiffFormula: "C 2 H 5 N 1 O -1 S 1"
+xref: DiffFormula: "C 2 H 5 N 1 O -1 S 1 "
 xref: DiffMono: "59.019356"
 xref: Formula: "C 6 H 12 N 2 O 1 S 1"
 xref: MassAvg: "160.24"
