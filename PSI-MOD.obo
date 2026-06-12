@@ -21711,7 +21711,7 @@ synonym: "Acrylamidyl Cystenyl" EXACT DeltaMass-label []
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
 xref: DiffMono: "none"
-xref: Formula: "C 6 H 10 N 2 O 2 S 1"
+xref: Formula: "C 6 H 10  N 2 O 2 S 1"
 xref: MassAvg: "174.22"
 xref: MassMono: "174.046299"
 xref: Origin: "C"
