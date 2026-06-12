@@ -9786,7 +9786,7 @@ is_a: MOD:02047 ! crosslinked glycine residue
 [Term]
 id: MOD:00386
 name: L-lysine 5-imidazolinone glycine
-def: "A protein modification that effectively crosslinks an L-lysine residue and a glycine residue to form L-lysine 5-imidazolinone glycine." [PubMed:10504696, RESID:AA0381]
+def: "A protein modification  that effectively crosslinks an L-lysine residue and a glycine residue to form L-lysine 5-imidazolinone glycine." [PubMed:10504696, RESID:AA0381]
 comment: Cross-link 2; carboxamidine; incidental to RESID:AA0183; incidental to RESID:AA0365.
 synonym: "(2-[(1S)-1,5-diaminopentyl]-5-oxo-4,5-dihydro-1H-imidazol-1-yl)acetic acid" EXACT RESID-systematic []
 synonym: "2-[(S)-1,5-diaminopentanyl]-1-carboxymethyl-1-imidazolin-5-one" EXACT RESID-alternate []
