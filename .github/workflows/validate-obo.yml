@@ -33,15 +33,22 @@ jobs:
     - name: Validate OBO file
       run: ./.github/binaries/psi-obo-helper fix PSI-MOD.obo
 
-    - name: Check for modified files
-      id: git-check
-      run: echo "modified=$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)" >> $GITHUB_OUTPUT
+    - name: Check for Changes
+      id: check_changes
+      run: |
+        if [[ -n "$(git diff --exit-code)" ]]; then
+          echo "Changes detected."
+          echo "::set-output name=has_changes::true"
+        else
+          echo "No changes detected."
+          echo "::set-output name=has_changes::false"
+        fi
 
     - name: Push changes
-      #if: steps.git-check.outputs.modified == 'true'
+      if: steps.check_changes.outputs.has_changes == 'true'
       run: |
         git config --global user.name 'OboRobo'
         git config --global user.email 'oborobo@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}
+        # git remote set-url origin https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}
         git commit -am "Automated fixes"
         git push
