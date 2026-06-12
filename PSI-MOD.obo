@@ -13710,8 +13710,8 @@ xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
-xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
+xref: TermSpec: "none"
 is_obsolete: true
 
 [Term]

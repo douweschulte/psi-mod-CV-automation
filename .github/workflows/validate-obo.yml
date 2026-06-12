@@ -17,6 +17,9 @@ on:
     paths:
       - 'PSI-MOD.obo'
 
+permissions: 
+  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -33,19 +36,19 @@ jobs:
     - name: Validate OBO file
       run: ./.github/binaries/psi-obo-helper fix PSI-MOD.obo
 
-    - name: Check for Changes
-      id: check_changes
-      run: |
-        if [[ -n "$(git diff --exit-code)" ]]; then
-          echo "Changes detected."
-          echo "::set-output name=has_changes::true"
-        else
-          echo "No changes detected."
-          echo "::set-output name=has_changes::false"
-        fi
+    # - name: Check for Changes
+    #   id: check_changes
+    #   run: |
+    #     if [[ -n "$(git diff --exit-code)" ]]; then
+    #       echo "Changes detected."
+    #       echo "::set-output name=has_changes::true"
+    #     else
+    #       echo "No changes detected."
+    #       echo "::set-output name=has_changes::false"
+    #     fi
 
     - name: Push changes
-      if: steps.check_changes.outputs.has_changes == 'true'
+      # if: steps.check_changes.outputs.has_changes == 'true'
       run: |
         git config --global user.name 'OboRobo'
         git config --global user.email 'oborobo@users.noreply.github.com'
