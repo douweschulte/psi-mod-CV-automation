@@ -21714,8 +21714,8 @@ xref: DiffMono: "none"
 xref: Formula: "C 6 H 10  N 2 O 2 S 1"
 xref: MassAvg: "174.22"
 xref: MassMono: "174.046299"
-xref: Origin: "C"
 xref: Source: "artifact"
+xref: Origin: "C"
 xref: Remap: "MOD:00417"
 is_obsolete: true
 
