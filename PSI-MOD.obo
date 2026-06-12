@@ -21689,8 +21689,8 @@ comment: From DeltaMass: (name misspelled "Acetamidomethyl Cystenyl") Average Ma
 synonym: "Acetamidomethyl Cystenyl" EXACT DeltaMass-label []
 synonym: "Acm-Cys" EXACT PSI-MOD-alternate []
 synonym: "N-(hydroxymethyl)acetamide derivatized L-cysteine" EXACT PSI-MOD-alternate []
-synonym: "S-(acetamido)methyl-L-cysteine" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "71.08"
+synonym: "S-(acetamido)methyl-L-cysteine" EXACT PSI-MOD-alternate []
 xref: DiffFormula: "C 3 H 5 N 1 O 1 S 0"
 xref: DiffMono: "71.037114"
 xref: Formula: "C 6 H 10 N 2 O 2 S 1"
