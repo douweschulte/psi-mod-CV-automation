@@ -13500,8 +13500,8 @@ xref: MassMono: "none"
 xref: TermSpec: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
-is_obsolete: true
 xref: Unimod: "Unimod:256"
+is_obsolete: true
 
 [Term]
 id: MOD:00580
