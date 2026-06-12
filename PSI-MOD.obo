@@ -13498,8 +13498,8 @@ xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: Source: "artifact"
 xref: TermSpec: "none"
+xref: Source: "artifact"
 xref: Unimod: "Unimod:256"
 is_obsolete: true
 
