@@ -21646,7 +21646,7 @@ is_obsolete: true
 [Term]
 id: MOD:01077
 name: ethanedithiol/TFA cyclic adduct
-def: "modification from DeltaMass" [DeltaMass:216]
+def: "modification from DeltaMass" [DeltaMass:216
 comment: From DeltaMass: Average Mass: 172 Average Mass Change:172 References:[1]. Sieber,P.(1987) Modification of tryptophan residues during acidolysis of4-methoxy-2,3,6-trimethylbenzenesulfonyl groups. Effects of scavengers. Tetrahedron Lett., 28(15),1637-1640. Notes: TFA-cyclic dithioketal by-product is formed when Trp-containing peptide is subjected to prolonged TFA/EDT treatment [1]. See structure at http://www.abrf.org/images/misc/dmass172.gif. Additional discussion of this adduct, and how to avoid it, can befound in Methods in Enzymology 289, 67 (1997)
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
