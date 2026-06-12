@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: OBO file validation
+name: obo-file-validation
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -13,7 +13,7 @@ on:
       - 'PSI-MOD.obo'
 
   pull_request:
-    branches: [ master, main]
+    branches: [ master, main ]
     paths:
       - 'PSI-MOD.obo'
 
