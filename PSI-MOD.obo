@@ -21658,6 +21658,7 @@ xref: Origin: "none"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00947 ! DeltaMass
+is_no: SOMETHING
 
 [Term]
 id: MOD:01078
