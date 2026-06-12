@@ -13476,7 +13476,7 @@ synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
 xref: DiffFormula: "C 2 H 4"
 xref: DiffMono: "28.031300"
-xref: Formula: "C "
+xref: Formula: "C 1"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
