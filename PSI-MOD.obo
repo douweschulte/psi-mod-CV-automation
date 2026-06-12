@@ -13464,8 +13464,8 @@ xref: Origin: "K, K, K, K, K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:254"
-is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00692 ! uncategorized crosslinked residues
+is_a: MOD:02051 ! crosslinked L-lysine residue
 
 [Term]
 id: MOD:00578
