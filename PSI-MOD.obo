@@ -2846,7 +2846,7 @@ synonym: "methyl methanethiolsulfonate derivatized cysteine" EXACT PSI-MOD-alter
 synonym: "methyl methanethiosulfonate derivatized cysteine" EXACT PSI-MOD-alternate []
 synonym: "mmts" EXACT OMSSA-label []
 xref: DiffAvg: "46.09"
-xref: DiffFormula: "C 1 H 2 S 1"
+xref: DiffFormula: "C 1 H 2 S 1 H 0"
 xref: DiffMono: "45.987721"
 xref: Formula: "C 4 H 7 N 1 O 1 S 2"
 xref: MassAvg: "149.24"
@@ -6195,7 +6195,7 @@ is_a: MOD:01047 ! monohydroxylated lysine
 [Term]
 id: MOD:00241
 name: N4-hydroxymethyl-L-asparagine
-def: "A protein modification that effectively converts an L-asparagine residue to N4-hydroxymethyl-L-asparagine." [RESID:AA0236, Unimod:414]
+def: "A protein modification  that effectively converts an L-asparagine residue to N4-hydroxymethyl-L-asparagine." [RESID:AA0236, Unimod:414]
 comment: N4-methyl-L-asparagine, see MOD:0079, was found at a homologous position of the same protein in a closely related species. Since the peptide containing this modification was obtained by enzymatic cleavage, not cyanogen bromide cleavage, it could have experienced oxidation of the following methionine residue, leading to the erroneous attribution of a mass of 29 for the modification rather than 14. comment: This is a deprecated entry in RESID. It probably does not occur naturally [JSG].
 synonym: "(2S)-2-amino-4-[(hydroxymethyl)amino]-4-oxobutanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-N4-hydroxymethylbutanediamic acid" EXACT RESID-alternate []
@@ -31283,8 +31283,8 @@ xref: DiffMono: "304.199039"
 xref: Formula: "H 31 (12)C 14 (13)C 6 (14)N 5 (15)N 2 (16)O 4"
 xref: MassAvg: "441.26"
 xref: MassMono: "441.257951"
-xref: Origin: "H"
 xref: Source: "artifact"
+xref: Origin: "H"
 xref: TermSpec: "none"
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01570 ! iTRAQ8plex-119 reporter+balance reagent acylated residue
