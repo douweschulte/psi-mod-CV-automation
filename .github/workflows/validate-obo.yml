@@ -28,7 +28,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v6
       with:
         fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
@@ -46,11 +45,10 @@ jobs:
       id: lint
       run: |
         OUTPUT=`./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
-        # echo "${OUTPUT[0]}"
         echo "${OUTPUT}"
         echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
 
-    - name: Fix and format main OBO file
+    - name: Fix, format, and version bump main OBO file
       run: |
         ./.github/binaries/psi-obo-helper fix PSI-MOD.obo --bump "${{ github.actor }}"
 
@@ -85,10 +83,7 @@ jobs:
         git push
 
     - name: Create release
-      run: |
-        echo "${{ steps.extract_version.outputs.cv_version }}"
-        echo "${{ steps.lint.outputs.changed_items }}"
-        gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
+      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
       env:
         GH_TOKEN: ${{ github.token }}
 
