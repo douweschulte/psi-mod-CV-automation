@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.35.2
-date: 13:06:2026 16:48
+data-version: 1.35.3
+date: 13:06:2026 16:54
 ontology: mod
 saved-by: douweschulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -5329,9 +5329,9 @@ xref: MassAvg: "186.21"
 xref: MassMono: "186.079313"
 xref: Origin: "W"
 xref: Source: "natural"
+xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0123
 is_a: MOD:00664 ! stereoisomerized residue
-xref: TermSpec: "none"
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -5341,9 +5341,9 @@ def: "A protein modification that effectively converts an L-glutamic acid residu
 synonym: "L-isoglutamyl-polyglycine" EXACT RESID-name []
 synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
 synonym: "gamma-glutamylpolyglycine" EXACT RESID-alternate []
+xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: Origin: "E"
 xref: uniprot.ptm: PTM-0394
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
@@ -5535,8 +5535,8 @@ synonym: "heparitin sulfate" EXACT RESID-alternate []
 synonym: "poly[alpha-1,4-(2-sulfate D-glucopyranuronosyl)-beta-1,4-(2-sulfamino-2-deoxy-6-sulfate D-glucosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
 xref: Origin: "S"
 xref: Source: "natural"
-is_a: MOD:00002 ! O-glycosyl-L-serine
 xref: TermSpec: "none"
+is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
 id: MOD:00216
@@ -20383,9 +20383,9 @@ xref: DiffAvg: "85.10"
 xref: DiffFormula: "C 4 H 7 N 1 O 1"
 xref: DiffMono: "85.052764"
 xref: Formula: "none"
+xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: MassAvg: "none"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00947 ! DeltaMass
