@@ -46,10 +46,9 @@ jobs:
       id: lint
       run: |
         declare -a OUTPUT=`./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
-        echo $OUTPUT[0]
         echo ${OUTPUT[0]}
         echo "${OUTPUT}"
-        echo "changed_items=$OUTPUT[0]" >> $GITHUB_ENV
+        echo "changed_items=${OUTPUT[0]}" >> $GITHUB_ENV
 
     - name: Fix and format main OBO file
       run: |
@@ -86,7 +85,10 @@ jobs:
         git push
 
     - name: Create release
-      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
+      run: |
+        echo "${{ steps.extract_version.outputs.cv_version }}"
+        echo "${{ steps.lint.outputs.changed_items }}"
+        gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
       env:
         GH_TOKEN: ${{ github.token }}
 

@@ -20459,8 +20459,8 @@ def: "A protein modification that effectively substitutes an anisyl (methoxyphen
 comment: From DeltaMass with no citation or formula: Average Mass: 90.
 xref: DiffAvg: "90.12"
 xref: DiffFormula: "C 7 H 6"
-xref: DiffMono: "90.046950"
 xref: Formula: "none"
+xref: DiffMono: "90.046950"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
