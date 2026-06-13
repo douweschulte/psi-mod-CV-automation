@@ -41,13 +41,9 @@ jobs:
           else
             echo "changed_lines=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
           fi
-          
-    - name: List changed lines
-      run: |
-          echo "::debug::$( ${{ steps.changed-files.outputs.changed_lines }})"
 
     - name: Lint main OBO file
-      run: ./.github/binaries/psi-obo-helper lint PSI-MOD.obo
+      run: ./.github/binaries/psi-obo-helper lint PSI-MOD.obo ${{ steps.changed-files.outputs.changed_lines }}
 
     - name: Fix and format main OBO file
       run: ./.github/binaries/psi-obo-helper fix PSI-MOD.obo
