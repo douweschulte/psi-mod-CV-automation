@@ -30299,7 +30299,7 @@ is_a: MOD:02051 ! crosslinked L-lysine residue
 id: MOD:01631
 name: L-alanine removal
 def: "A protein modification that effectively removes or replaces an L-alanine." [PubMed:18688235]
-comment: This represents the loss or replacement of an L-alanine residue in a polypeptide, and may be combined with the formula or mass of another entry that is the replacement residue to represent a mutation or substitution.
+comment: This  represents the loss or replacement of an L-alanine residue in a polypeptide, and may be combined with the formula or mass of another entry that is the replacement residue to represent a mutation or substitution.
 subset: PSI-MOD-slim
 property_value: DiffAvg: "-71.08" xsd:float
 property_value: DiffFormula: "C -3 H -5 N -1 O -1" xsd:string
