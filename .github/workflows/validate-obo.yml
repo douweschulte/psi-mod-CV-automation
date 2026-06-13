@@ -33,19 +33,19 @@ jobs:
       with:
         fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
 
-    - name: Get changed files
+    - name: Get changed lines
       id: changed-files
       run: |
           if ${{ github.event_name == 'pull_request' }}; then
-              echo "changed_files=$(git diff -r HEAD^1 HEAD PSI-MOD.obo | xargs)" >> $GITHUB_OUTPUT
+            echo "changed_files=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '(?<=^@@ -\d{1,10}(,\d{1,10})? \+)\d+')" >> $GITHUB_OUTPUT
           else
-              echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | xargs)" >> $GITHUB_OUTPUT
+            echo "changed_files=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '(?<=^@@ -\d{1,10}(,\d{1,10})? \+)\d+')" >> $GITHUB_OUTPUT
           fi
           
     - name: List changed files
       run: |
           for file in ${{ steps.changed-files.outputs.changed_files }}; do
-              echo "$file was changed"
+            echo "$file was changed"
           done
 
     - name: Lint main OBO file
