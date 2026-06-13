@@ -43,13 +43,18 @@ jobs:
           fi
 
     - name: Lint main OBO file
-      run: ./.github/binaries/psi-obo-helper lint PSI-MOD.obo ${{ steps.detect_changes.outputs.changed_lines }}
+      id: lint
+      run: |
+        output = ./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers ${{ steps.detect_changes.outputs.changed_lines }}
+        echo "changed_items=${ grep 'Changed items: ' $output }" >> $GITHUB_ENV
+        echo $output
 
     - name: Fix and format main OBO file
-      run: ./.github/binaries/psi-obo-helper fix PSI-MOD.obo
+      run: |
+        ./.github/binaries/psi-obo-helper fix PSI-MOD.obo --bump "${{ github.actor }}"
 
     - name: Create newstyle Obo (for Owl conversion)
-      run: ./.github/binaries/psi-obo-helper newfmt PSI-MOD.obo
+      run: ./.github/binaries/psi-obo-helper newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
 
     - name: Generate Owl
       run: |
@@ -57,6 +62,13 @@ jobs:
         # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
         export JAVA_TOOL_OPTIONS=-Xmx4G
         docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.10 robot convert -vvv -i /work/PSI-MOD-newstyle.obo -o /work/PSI-MOD.owl --format owl
+
+    - name: Extract version number from Obo
+      id: extract_version
+      run: |
+        CV_VERSION=`grep data-version PSI-MOD.obo | grep -oP "(\d+.\d+.\d+)"`
+        echo cv_version=${CV_VERSION}
+        echo "cv_version=${CV_VERSION}" >> $GITHUB_ENV
 
     - name: Check for Changes
       id: check_changes
@@ -68,5 +80,8 @@ jobs:
         git config --global user.name 'OboRobo'
         git config --global user.email 'oborobo@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
-        git commit -am "Automated fixes"
+        git commit -am "Formatting and version bump"
         git push
+
+    - name: Create release
+      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
