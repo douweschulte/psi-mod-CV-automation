@@ -2846,7 +2846,7 @@ synonym: "methyl methanethiolsulfonate derivatized cysteine" EXACT PSI-MOD-alter
 synonym: "methyl methanethiosulfonate derivatized cysteine" EXACT PSI-MOD-alternate []
 synonym: "mmts" EXACT OMSSA-label []
 xref: DiffAvg: "46.09"
-xref: DiffFormula: "C 1 H 2 S 1 H 0"
+xref: DiffFormula: "C 1 H 2 S 1"
 xref: DiffMono: "45.987721"
 xref: Formula: "C 4 H 7 N 1 O 1 S 2"
 xref: MassAvg: "149.24"
@@ -31283,8 +31283,8 @@ xref: DiffMono: "304.199039"
 xref: Formula: "H 31 (12)C 14 (13)C 6 (14)N 5 (15)N 2 (16)O 4"
 xref: MassAvg: "441.26"
 xref: MassMono: "441.257951"
-xref: Source: "artifact"
 xref: Origin: "H"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01570 ! iTRAQ8plex-119 reporter+balance reagent acylated residue

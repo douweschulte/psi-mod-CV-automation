@@ -5928,7 +5928,7 @@ is_a: MOD:01047 ! monohydroxylated lysine
 [Term]
 id: MOD:00241
 name: N4-hydroxymethyl-L-asparagine
-def: "A protein modification that effectively converts an L-asparagine residue to N4-hydroxymethyl-L-asparagine." [RESID:AA0236, Unimod:414]
+def: "A protein modification  that effectively converts an L-asparagine residue to N4-hydroxymethyl-L-asparagine." [RESID:AA0236, Unimod:414]
 comment: N4-methyl-L-asparagine, see MOD:0079, was found at a homologous position of the same protein in a closely related species. Since the peptide containing this modification was obtained by enzymatic cleavage, not cyanogen bromide cleavage, it could have experienced oxidation of the following methionine residue, leading to the erroneous attribution of a mass of 29 for the modification rather than 14. comment: This is a deprecated entry in RESID. It probably does not occur naturally [JSG].
 synonym: "(2S)-2-amino-4-[(hydroxymethyl)amino]-4-oxobutanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-N4-hydroxymethylbutanediamic acid" EXACT RESID-alternate []
