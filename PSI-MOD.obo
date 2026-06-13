@@ -4948,8 +4948,8 @@ synonym: "methyl-dehydroalanine" EXACT RESID-alternate []
 synonym: "phospholosst" EXACT OMSSA-label []
 xref: DiffAvg: "-18.02"
 xref: DiffFormula: "H -2 O -1"
-xref: DiffMono: "-18.0105"
 xref: Formula: "C 4 H 5 N 1 O 1"
+xref: DiffMono: "-18.0105"
 xref: MassAvg: "83.09"
 xref: MassMono: "83.037114"
 xref: Origin: "T"
