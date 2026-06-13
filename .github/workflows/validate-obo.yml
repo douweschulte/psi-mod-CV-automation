@@ -45,7 +45,7 @@ jobs:
     - name: Lint main OBO file
       id: lint
       run: |
-        output = ./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers ${{ steps.detect_changes.outputs.changed_lines }}
+        OUTPUT=`./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers ${{ steps.detect_changes.outputs.changed_lines }}`
         echo "changed_items=${ grep 'Changed items: ' $output }" >> $GITHUB_ENV
         echo $output
 
