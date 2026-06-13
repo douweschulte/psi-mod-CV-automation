@@ -9778,8 +9778,8 @@ xref: Origin: "G, N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0046
-is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
+is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 
