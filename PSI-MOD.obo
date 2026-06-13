@@ -9723,8 +9723,8 @@ xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0014
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
-is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
 id: MOD:00384
