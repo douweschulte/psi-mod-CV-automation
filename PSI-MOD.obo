@@ -38030,9 +38030,9 @@ synonym: "O4'-glycosyl-L-tyrosine" EXACT RESID-alternate []
 synonym: "mucin type O-glycosyltyrosine" EXACT RESID-alternate []
 xref: DiffAvg: "203.19"
 xref: DiffFormula: "C 8 H 13 N 1 O 5"
-xref: DiffMono: "203.079373"
 xref: Formula: "C 17 H 22 N 2 O 7"
 xref: MassAvg: "366.37"
+xref: DiffMono: "203.079373"
 xref: MassMono: "366.142701"
 xref: Origin: "Y"
 xref: Source: "natural"
