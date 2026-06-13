@@ -9797,8 +9797,8 @@ synonym: "[2-(1,5-diaminopentanyl)-5-oxo-4,5-dihydro-imidazol-1-yl]-acetic acid"
 synonym: "lysyl-5-imidazolino ne glycine" EXACT RESID-alternate []
 synonym: "para-hydroxybenzylidene-imidazolidinone chromophore" EXACT RESID-alternate []
 xref: DiffAvg: "-18.02"
-xref: DiffFormula: "H -2 O -1"
 xref: DiffMono: "-18.010565"
+xref: DiffFormula: "H -2 O -1"
 xref: Formula: "C 8 H 13 N 3 O 1"
 xref: MassAvg: "167.21"
 xref: MassMono: "167.105862"
