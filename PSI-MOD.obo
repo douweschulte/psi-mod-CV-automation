@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: 1.35.1
+data-version: 1.35.2
 date: 13:06:2026 16:48
 ontology: mod
 saved-by: douweschulte
@@ -5239,8 +5239,8 @@ xref: Formula: "C 9 H 9 N 1 O 1"
 xref: MassAvg: "147.17"
 xref: MassMono: "147.068414"
 xref: Origin: "F"
-xref: TermSpec: "none"
 xref: Source: "natural"
+xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0121
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
