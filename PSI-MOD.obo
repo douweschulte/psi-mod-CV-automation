@@ -9774,8 +9774,8 @@ xref: DiffMono: "-18.010565"
 xref: Formula: "C 6 H 7 N 3 O 2"
 xref: MassAvg: "153.14"
 xref: MassMono: "153.053826"
-xref: Origin: "G, N"
 xref: Source: "hypothetical"
+xref: Origin: "G, N"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0046
 is_a: MOD:00954 ! crosslinked residues with loss of water
