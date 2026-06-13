@@ -40,6 +40,13 @@ jobs:
     - name: Create newstyle Obo (for Owl conversion)
       run: ./.github/binaries/psi-obo-helper newfmt PSI-MOD.obo
 
+    - name: Generate Owl
+      run: |
+        docker pull obolibrary/robot:v1.9.10
+        # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
+        export JAVA_TOOL_OPTIONS=-Xmx4G
+        docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.10 robot convert -vvv -i /work/PSI-MOD-newstyle.obo -o /work/PSI-MOD.owl --format owl
+
     - name: Check for Changes
       id: check_changes
       run: echo "has_changes=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
