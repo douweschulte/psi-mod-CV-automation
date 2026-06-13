@@ -37,14 +37,14 @@ jobs:
       id: changed-files
       run: |
           if ${{ github.event_name == 'pull_request' }}; then
-            echo "changed_lines=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ';')" >> $GITHUB_OUTPUT
+            echo "changed_lines=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
           else
-            echo "changed_lines=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ';')" >> $GITHUB_OUTPUT
+            echo "changed_lines=$(git diff --unified=0 --no-color --ignore-all-space --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
           fi
           
     - name: List changed lines
       run: |
-          echo "::debug::$( ${{ steps.changed-files.outputs.changed_lines }};)"
+          echo "::debug::$( ${{ steps.changed-files.outputs.changed_lines }})"
 
     - name: Lint main OBO file
       run: ./.github/binaries/psi-obo-helper lint PSI-MOD.obo

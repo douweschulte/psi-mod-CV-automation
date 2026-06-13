@@ -9984,8 +9984,8 @@ xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: Source: "artifact"
 xref: TermSpec: "none"
+xref: Source: "artifact"
 xref: Unimod: "Unimod:1"
 is_a: MOD:02078 ! acetylated residue
 
