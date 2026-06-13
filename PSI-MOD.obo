@@ -9733,8 +9733,8 @@ def: "A protein modification that effectively crosslinks an L-methionine residue
 comment: Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.
 synonym: "(2-[1-imino-3-(methylsulfanyl)propyl]-5-oxo-4,5-dihydro-imidazol-1-yl)acetic acid" EXACT RESID-alternate []
 synonym: "(2-[3-(methylsulfanyl)propanimidoyl]-5-oxo-4,5-dihydro-1H-imidazol-1-yl)acetic acid" EXACT RESID-systematic []
-synonym: "2,N-didehydromethionyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "2-[1-imino-3-(methylsulfanyl)propyl]-1-carboxymethyl-1-imidazolin-5-one" EXACT RESID-alternate []
+synonym: "2,N-didehydromethionyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "2-imino-methionine 5-imidazolinone glycine" EXACT RESID-name []
 synonym: "2-imino-methionyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "CROSSLNK 2-iminomethyl-5-imidazolinone (Met-Gly)" EXACT UniProt-feature []
