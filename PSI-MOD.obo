@@ -38181,8 +38181,8 @@ relationship: has_functional_parent MOD:00189 ! dehydroalanine (Ser)
 id: MOD:01923
 name: N6-(L-aspartyl)-L-lysine
 def: "A protein modification that effectively crosslinks an L-aspartic acid residue and an L-lysine residue by an isopeptide bond to form N6-(L-aspartyl)-L-lysine and the release of water." [PubMed:15044436, RESID:AA0583]
-comment: Cross-link 2.
 synonym: "(2S)-2-amino-6-([(2S)-2-amino-3-carboxypropanoyl]amino)hexanoic acid" EXACT RESID-systematic []
+comment: Cross-link 2.
 synonym: "N(epsilon)-(alpha-aspartyl)lysine" EXACT RESID-alternate []
 synonym: "N6-(L-aspartyl)-L-lysine" EXACT RESID-name []
 synonym: "XLNK-4Asp-N6Lys(Asp)" EXACT PSI-MOD-label []
