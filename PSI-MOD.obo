@@ -5329,9 +5329,9 @@ xref: MassAvg: "186.21"
 xref: MassMono: "186.079313"
 xref: Origin: "W"
 xref: Source: "natural"
-xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0123
 is_a: MOD:00664 ! stereoisomerized residue
+xref: TermSpec: "none"
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -5535,8 +5535,8 @@ synonym: "heparitin sulfate" EXACT RESID-alternate []
 synonym: "poly[alpha-1,4-(2-sulfate D-glucopyranuronosyl)-beta-1,4-(2-sulfamino-2-deoxy-6-sulfate D-glucosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
 xref: Origin: "S"
 xref: Source: "natural"
-xref: TermSpec: "none"
 is_a: MOD:00002 ! O-glycosyl-L-serine
+xref: TermSpec: "none"
 
 [Term]
 id: MOD:00216
