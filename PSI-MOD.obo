@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: 1.035.0
-date: 22:05:2026 18:00
+data-version: 1.35.1
+date: 13:06:2026 16:48
 ontology: mod
-saved-by: Douwe Schulte
+saved-by: douweschulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -4948,16 +4948,16 @@ synonym: "methyl-dehydroalanine" EXACT RESID-alternate []
 synonym: "phospholosst" EXACT OMSSA-label []
 xref: DiffAvg: "-18.02"
 xref: DiffFormula: "H -2 O -1"
+xref: DiffMono: "-18.010565"
 xref: Formula: "C 4 H 5 N 1 O 1"
-xref: DiffMono: "-18.0105"
 xref: MassAvg: "83.09"
 xref: MassMono: "83.037114"
 xref: Origin: "T"
 xref: Source: "natural"
-xref: Unimod: "Unimod:23"
 xref: TermSpec: "none"
-is_a: MOD:00416 ! phosphorylation of an hydroxyl amino acid with prompt loss of phosphate
+xref: Unimod: "Unimod:23"
 xref: uniprot.ptm: PTM-0007
+is_a: MOD:00416 ! phosphorylation of an hydroxyl amino acid with prompt loss of phosphate
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01703 ! dehydrobutyrine
 
@@ -5061,8 +5061,8 @@ synonym: "lactic acid from N-term Ser" RELATED Unimod-description []
 xref: DiffAvg: "-15.01"
 xref: DiffFormula: "H -1 N -1"
 xref: DiffMono: "-15.010899"
-xref: MassAvg: "73.07"
 xref: Formula: "C 3 H 5 O 2"
+xref: MassAvg: "73.07"
 xref: MassMono: "73.028954"
 xref: Origin: "S"
 xref: TermSpec: "N-term"
@@ -5094,8 +5094,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0045
 is_a: MOD:00954 ! crosslinked residues with loss of water
-is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
+is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 
 [Term]
