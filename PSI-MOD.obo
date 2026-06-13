@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.35.3
-date: 13:06:2026 16:54
+data-version: 1.35.4
+date: 13:06:2026 16:56
 ontology: mod
 saved-by: douweschulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -20459,8 +20459,8 @@ def: "A protein modification that effectively substitutes an anisyl (methoxyphen
 comment: From DeltaMass with no citation or formula: Average Mass: 90.
 xref: DiffAvg: "90.12"
 xref: DiffFormula: "C 7 H 6"
-xref: Formula: "none"
 xref: DiffMono: "90.046950"
+xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
