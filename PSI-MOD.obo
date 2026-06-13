@@ -9716,15 +9716,15 @@ xref: DiffAvg: "-20.03"
 xref: DiffFormula: "H -4 O -1"
 xref: DiffMono: "-20.026215"
 xref: Formula: "C 7 H 6 N 2 O 3"
-xref: MassMono: "166.037842"
 xref: MassAvg: "166.13"
-xref: Source: "hypothetical"
+xref: MassMono: "166.037842"
 xref: Origin: "E, G"
+xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0014
+is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:02047 ! crosslinked glycine residue
-is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
 id: MOD:00384
@@ -9733,8 +9733,8 @@ def: "A protein modification that effectively crosslinks an L-methionine residue
 comment: Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.
 synonym: "(2-[1-imino-3-(methylsulfanyl)propyl]-5-oxo-4,5-dihydro-imidazol-1-yl)acetic acid" EXACT RESID-alternate []
 synonym: "(2-[3-(methylsulfanyl)propanimidoyl]-5-oxo-4,5-dihydro-1H-imidazol-1-yl)acetic acid" EXACT RESID-systematic []
-synonym: "2-[1-imino-3-(methylsulfanyl)propyl]-1-carboxymethyl-1-imidazolin-5-one" EXACT RESID-alternate []
 synonym: "2,N-didehydromethionyl-5-imidazolinone glycine" EXACT RESID-alternate []
+synonym: "2-[1-imino-3-(methylsulfanyl)propyl]-1-carboxymethyl-1-imidazolin-5-one" EXACT RESID-alternate []
 synonym: "2-imino-methionine 5-imidazolinone glycine" EXACT RESID-name []
 synonym: "2-imino-methionyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "CROSSLNK 2-iminomethyl-5-imidazolinone (Met-Gly)" EXACT UniProt-feature []
