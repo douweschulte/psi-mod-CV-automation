@@ -5341,9 +5341,9 @@ def: "A protein modification that effectively converts an L-glutamic acid residu
 synonym: "L-isoglutamyl-polyglycine" EXACT RESID-name []
 synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
 synonym: "gamma-glutamylpolyglycine" EXACT RESID-alternate []
-xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Origin: "E"
 xref: uniprot.ptm: PTM-0394
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
