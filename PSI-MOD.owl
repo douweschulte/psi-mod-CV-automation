@@ -11,8 +11,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:uniprot.ptm="https://bioregistry.io/uniprot.ptm:">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.35.4/mod.owl"/>
-        <oboInOwl:date>13:06:2026 16:56</oboInOwl:date>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.35.5/mod.owl"/>
+        <oboInOwl:date>13:06:2026 17:02</oboInOwl:date>
         <oboInOwl:default-namespace>PSI-MOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>douweschulte</oboInOwl:saved-by>
