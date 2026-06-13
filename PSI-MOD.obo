@@ -32862,9 +32862,9 @@ xref: DiffMono: "287.072848"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
+xref: TermSpec: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
-xref: TermSpec: "none"
 is_a: MOD:01652 ! sulfonyl halide reagent derivatized residue
 
 [Term]

@@ -48,7 +48,7 @@ jobs:
         declare -a OUTPUT=`./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
         echo ${OUTPUT[0]}
         echo "${OUTPUT}"
-        echo "changed_items=${OUTPUT[0]}" >> $GITHUB_ENV
+        echo "changed_items=${OUTPUT[0]}" >> $GITHUB_OUTPUT
 
     - name: Fix and format main OBO file
       run: |
@@ -69,7 +69,7 @@ jobs:
       run: |
         CV_VERSION=`grep data-version PSI-MOD.obo | grep -oP "(\d+.\d+.\d+)"`
         echo cv_version=${CV_VERSION}
-        echo "cv_version=${CV_VERSION}" >> $GITHUB_ENV
+        echo "cv_version=${CV_VERSION}" >> $GITHUB_OUTPUT
 
     - name: Check for Changes
       id: check_changes
