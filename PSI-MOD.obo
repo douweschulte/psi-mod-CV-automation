@@ -30279,9 +30279,9 @@ xref: DiffAvg: "304.21"
 xref: DiffFormula: "H 24 (12)C 7 (13)C 7 (14)N 3 (15)N 1 (16)O 3"
 xref: DiffMono: "304.205359"
 xref: Formula: "none"
+xref: Origin: "X"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:730"
@@ -30301,9 +30301,9 @@ synonym: "iTRAQ8plex" RELATED Unimod-interim []
 synonym: "iTRAQ8plex:13C(7)15N(1)" RELATED Unimod-alternate []
 xref: DiffAvg: "304.21"
 xref: DiffFormula: "H 24 (12)C 7 (13)C 7 (14)N 3 (15)N 1 (16)O 3"
-xref: DiffMono: "304.205359"
 xref: Formula: "H 36 (12)C 13 (13)C 7 (14)N 5 (15)N 1 (16)O 4"
 xref: MassAvg: "432.31"
+xref: DiffMono: "304.205359"
 xref: MassMono: "432.300322"
 xref: Origin: "K"
 xref: Source: "artifact"
@@ -30322,9 +30322,9 @@ synonym: "(4-methylpiperazin-1-yl)acetyl" EXACT PSI-MOD-alternate []
 synonym: "Applied Biosystems iTRAQ(TM) multiplexed quantitation chemistry" RELATED Unimod-alternate []
 synonym: "Representative mass and accurate mass for 113, 114, 116 & 117" RELATED Unimod-description []
 synonym: "iTRAQ8plex" RELATED Unimod-interim []
+xref: DiffFormula: "H 24 (12)C 7 (13)C 7 (14)N 3 (15)N 1 (16)O 3"
 synonym: "iTRAQ8plex:13C(7)15N(1)" RELATED Unimod-alternate []
 xref: DiffAvg: "304.21"
-xref: DiffFormula: "H 24 (12)C 7 (13)C 7 (14)N 3 (15)N 1 (16)O 3"
 xref: DiffMono: "304.205359"
 xref: Formula: "H 33 (12)C 16 (13)C 7 (14)N 4 (15)N 1 (16)O 5"
 xref: MassAvg: "467.27"
