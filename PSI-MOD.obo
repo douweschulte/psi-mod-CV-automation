@@ -9718,8 +9718,8 @@ xref: DiffMono: "-20.026215"
 xref: Formula: "C 7 H 6 N 2 O 3"
 xref: MassMono: "166.037842"
 xref: MassAvg: "166.13"
-xref: Origin: "E, G"
 xref: Source: "hypothetical"
+xref: Origin: "E, G"
 xref: TermSpec: "none"
 xref: uniprot.ptm: PTM-0014
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
