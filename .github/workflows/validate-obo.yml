@@ -11,30 +11,34 @@ on:
       - main
     paths:
       - 'PSI-MOD.obo'
+      - '.github/binaries/*'
 
   pull_request:
     branches: [ master, main ]
     paths:
       - 'PSI-MOD.obo'
+      - '.github/binaries/*'
 
 permissions: 
   contents: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  fix:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v6
 
-    # Runs a single command using the runners shell
-    - name: Validate OBO file
+    - name: Lint main OBO file
+      run: ./.github/binaries/psi-obo-helper lint PSI-MOD.obo
+
+    - name: Fix and format main OBO file
       run: ./.github/binaries/psi-obo-helper fix PSI-MOD.obo
+
+    - name: Create newstyle Obo (for Owl conversion)
+      run: ./.github/binaries/psi-obo-helper newfmt PSI-MOD.obo
 
     - name: Check for Changes
       id: check_changes
