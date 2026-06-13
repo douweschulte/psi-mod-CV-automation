@@ -32283,9 +32283,9 @@ synonym: "thiocarboxylic acid" RELATED Unimod-description []
 xref: DiffAvg: "16.07"
 xref: DiffFormula: "O -1 S 1"
 xref: DiffMono: "15.977157"
-xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
+xref: Formula: "none"
 xref: Origin: "G"
 xref: Source: "natural"
 is_a: MOD:00749 ! sulfur substitution for oxygen
@@ -32410,7 +32410,7 @@ is_a: MOD:02051 ! crosslinked L-lysine residue
 id: MOD:01631
 name: L-alanine removal
 def: "A protein modification that effectively removes or replaces an L-alanine." [PubMed:18688235]
-comment: This represents the loss or replacement of an L-alanine residue in a polypeptide, and may be combined with the formula or mass of another entry that is the replacement residue to represent a mutation or substitution.
+comment: This  represents the loss or replacement of an L-alanine residue in a polypeptide, and may be combined with the formula or mass of another entry that is the replacement residue to represent a mutation or substitution.
 subset: PSI-MOD-slim
 xref: DiffAvg: "-71.08"
 xref: DiffFormula: "C -3 H -5 N -1 O -1"
@@ -32575,7 +32575,7 @@ def: "A protein modification that effectively removes or replaces an L-isoleucin
 comment: This represents the loss or replacement of an L-isoleucine residue in a polypeptide, and may be combined with the formula or mass of another entry that is the replacement residue to represent a mutation or substitution.
 subset: PSI-MOD-slim
 xref: DiffAvg: "-113.16"
-xref: DiffFormula: "C -6 H -11 N -1 O -1"
+xref: DiffFormula: "C -6 H -11 N -1 O -1 H 0"
 xref: DiffMono: "-113.084064"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -40133,8 +40133,8 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00649 ! acylated residue
 is_a: MOD:01155 ! lipoconjugated residue
+is_a: MOD:00649 ! acylated residue
 
 [Term]
 id: MOD:02022
