@@ -85,3 +85,6 @@ jobs:
 
     - name: Create release
       run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
+      env:
+        GH_TOKEN: ${{ github.token }}
+
