@@ -9739,8 +9739,8 @@ synonym: "2-imino-methionine 5-imidazolinone glycine" EXACT RESID-name []
 synonym: "2-imino-methionyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "CROSSLNK 2-iminomethyl-5-imidazolinone (Met-Gly)" EXACT UniProt-feature []
 synonym: "GFP-like chromoprotein asFP595 chromophore" EXACT RESID-alternate []
-synonym: "para-hydroxybenzylidene-imidazolidinone chromophore" EXACT RESID-alternate []
 synonym: "red fluorescent protein eqFP611 chromophore" EXACT RESID-alternate []
+synonym: "para-hydroxybenzylidene-imidazolidinone chromophore" EXACT RESID-alternate []
 xref: DiffAvg: "-20.03"
 xref: DiffFormula: "H -4 O -1"
 xref: DiffMono: "-20.026215"
