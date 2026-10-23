@@ -23508,7 +23508,7 @@ is_a: MOD:00908 ! modified glycine residue
 [Term]
 id: MOD:01181
 name: L-aspartic acid 4-methyl ester
-def: "A protein modification that effectively converts an L-aspartic acid residue to L-aspartate 4-methyl ester." [OMSSA:69, PubMed:1556110, PubMed:16888766, PubMed:9629898, RESID:AA0435, Unimod:34#D]
+def: "A protein modification that effectivellly converts an L-aspartic acid residue to L-aspartate 4-methyl ester." [OMSSA:69, PubMed:1556110, PubMed:16888766, PubMed:9629898, RESID:AA0435, Unimod:34#D]
 comment: CAUTION - observations of this modifation are attributable to artifacts produced in preparation. It is extremely unlikely that eukaryotes produce this modification, because an enzyme acting to form the methyl ester of L-aspartyl peptides would interfere with the D-aspartyl peptide repair mechanism [JSG].
 synonym: "(2S)-2-amino-4-methoxy-4-oxobutanoic acid" EXACT RESID-systematic []
 synonym: "2-aminobutanedioic acid 4-methyl ester" EXACT RESID-alternate []

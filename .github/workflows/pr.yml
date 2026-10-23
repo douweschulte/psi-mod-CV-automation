@@ -18,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+    
     - name: Checkout PR
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
