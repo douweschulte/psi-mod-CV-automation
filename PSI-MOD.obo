@@ -19281,7 +19281,7 @@ is_a: MOD:00913 ! modified L-methionine residue
 [Term]
 id: MOD:00936
 name: Levuglandinyl - hydroxylactam adduct, K and N-term
-def: "modification from Unimod Post-translational" [Unimod:504]
+def: "modification from Unimod Post-translational there def was a typo here" [Unimod:504]
 synonym: "LG-Hlactam-K" RELATED Unimod-interim []
 synonym: "Levuglandinyl - lysine hydroxylactam adduct" RELATED Unimod-description []
 xref: DiffAvg: "348.43"
