@@ -19424,28 +19424,28 @@ xref: Formula: "C 7 H 14 N 1 O 1"
 xref: MassAvg: "128.19"
 xref: MassMono: "128.107539"
 xref: Origin: "X"
-xref: Source:  "artifact"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:476"
-is_a: MOD:00848 ! reagent derivatized residue 
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00944
 name: d9-4-trimethylammoniumbutanoyl derivatized residue
 def: "modification from Unimod Isotopic label" [Unimod:477]
 synonym: "TMAB:2H(9)" RELATED Unimod-interim []
-synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED  Unimod-description []
+synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 xref: DiffAvg: "137.25"
-xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1 " 
+xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: DiffMono: "137.164030"
 xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: MassAvg: "137.25"
-xref: MassMono: "137.164030"  
+xref: MassMono: "137.164030"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:477"
-is_a: MOD:01431 ! (2)H deuterium tagged reagent 
+is_a: MOD:01431 ! (2)H deuterium tagged reagent
 relationship: derives_from MOD:00943 ! 4-trimethylammoniumbutanoyl derivatized residue
 
 [Term]
@@ -19460,7 +19460,7 @@ xref: MassAvg: "508.50"
 xref: MassMono: "508.105270"
 xref: Origin: "S"
 xref: Remap: "MOD:00626"
-xref: Source: "artifact" 
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_obsolete: true
 
