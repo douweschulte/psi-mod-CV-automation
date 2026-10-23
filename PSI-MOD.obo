@@ -19443,7 +19443,7 @@ xref: MassAvg: "137.25"
 xref: MassMono: "137.164030"
 xref: Origin: "X"
 xref: Source: "artifact"
-xref: TermSpec: "none"
+xref: TermSpec: "none"  
 xref: Unimod: "Unimod:477"
 is_a: MOD:01431 ! (2)H deuterium tagged reagent
 relationship: derives_from MOD:00943 ! 4-trimethylammoniumbutanoyl derivatized residue
@@ -19460,7 +19460,7 @@ xref: MassAvg: "508.50"
 xref: MassMono: "508.105270"
 xref: Origin: "S"
 xref: Remap: "MOD:00626"
-xref: Source: "artifact"
+xref: Source: "artifact" 
 xref: TermSpec: "none"
 is_obsolete: true
 
@@ -19469,7 +19469,7 @@ id: MOD:00946
 name: crosslinked residues with loss of ammonia
 def: "A protein modification that crosslinks two residues with a covalent bond and the loss of ammonia." [PubMed:18688235]
 subset: PSI-MOD-slim
-is_a: MOD:00033 ! crosslinked residues
+is_a: MOD:00033 ! crosslinked residues 
 
 [Term]
 id: MOD:00947
