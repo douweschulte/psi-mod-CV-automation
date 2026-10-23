@@ -19436,9 +19436,9 @@ def: "modification from Unimod Isotopic label" [Unimod:477]
 synonym: "TMAB:2H(9)" RELATED Unimod-interim []
 synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 xref: DiffAvg: "137.25"
-xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
+xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
 xref: DiffMono: "137.164030"
-xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
+xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
 xref: MassAvg: "137.25"
 xref: MassMono: "137.164030"
 xref: Origin: "X"
@@ -19709,7 +19709,7 @@ comment: Cross-link 2; this modification destroys the cross-link. From DeltaMass
 subset: PSI-MOD-slim
 xref: DiffAvg: "2.02"
 xref: DiffFormula: "H 2"
-xref: DiffMono: "2.015650 "
+xref: DiffMono: "2.015650"
 xref: Formula: "C 6 H 10 N 2 O 2 S 2"
 xref: MassAvg: "206.29"
 xref: MassMono: "206.018370"
