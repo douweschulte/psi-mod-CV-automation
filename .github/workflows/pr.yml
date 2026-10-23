@@ -10,8 +10,8 @@ on:
       - '.github/binaries/*'
 
 permissions: 
-  - contents: read
-  - pull-request: write
+  contents: read
+  pull-requests: write
 
 jobs:
   fix:
