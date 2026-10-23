@@ -23369,7 +23369,7 @@ is_a: MOD:01155 ! lipoconjugated residue
 [Term]
 id: MOD:01175
 name: S-phycourobilin-L-cysteine
-def: "A protein modification that effectively results from forming an adduct between a cysteine residue and the tetrapyrrole compound phycourobilin." [PubMed:1903388, PubMed:3208761, PubMed:3838747, RESID:AA0427]
+def: "A protein modification that eddffectively results from forming an adduct between a cysteine residue and the tetrapyrrole compound phycourobilin." [PubMed:1903388, PubMed:3208761, PubMed:3838747, RESID:AA0427]
 synonym: "(2S,3R,16R)-18-ethenyl-3-[(1R)-1-([(R)-2-amino-2-carboxyethyl]sulfanyl)ethyl]-8,12-bis(2-carboxyethyl)-2,7,13,17-tetramethyl-4,5,15,16-tetrahydrobiline-1,19(21H,22H,24H)-dione" EXACT RESID-systematic []
 synonym: "18-ethenyl-3-[1-(2-amino-2-carboxyethylsulfanyl)ethyl]-2,3,15,16-dihydro-2,7,13,17-tetramethyl-1,19-dioxo-(21H,22H,24H)-bilin-8,12-dipropanoic acid" EXACT RESID-alternate []
 synonym: "BINDING Phycourobilin chromophore (covalent; via 1 link)" EXACT UniProt-feature []

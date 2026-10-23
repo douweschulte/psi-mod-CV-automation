@@ -17,11 +17,7 @@ jobs:
   fix:
     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v6
-      with:
-        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
-    
+    steps:    
     - name: Checkout PR
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,13 +33,16 @@ jobs:
     - name: Get changed lines
       id: detect_changes
       run: |
-        echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
+        echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.outputs.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
 
     - name: Lint main OBO file
       id: lint
       run: |
         OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr`
+        echoe "${{ steps.commit.outputs.oldest }}"
+        echoe "${{ steps.detect_changes.outputs.changed_lines }}"
         echo "${OUTPUT}"
+
         echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
 
     - name: Fix, format, and version bump main OBO file
