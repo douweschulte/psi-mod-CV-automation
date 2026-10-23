@@ -27,21 +27,18 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: gh pr checkout ${{ github.event.pull_request.number }}
 
-    - name: Get changed lines
-      id: detect_changes
-      run: |
-          if ${{ github.event_name == 'pull_request' }}; then
-            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
-          else
-            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
-          fi
-    
-    - name: Get changed lines 2
-      id: detect_changes_2
+    - name: Get oldest commit
+      id: commit
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-          gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid'
+          OUTPU=`gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid'`
+          echo "oldest=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
+
+    - name: Get changed lines
+      id: detect_changes
+      run: |
+          echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
 
     - name: Lint main OBO file
       id: lint

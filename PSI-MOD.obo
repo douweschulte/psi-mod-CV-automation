@@ -19704,12 +19704,12 @@ is_a: MOD:01156 ! protein modification categorized by chemical process
 [Term]
 id: MOD:00961
 name: reduction of disulfide crosslink in cystine to two cysteines
-def: "A protein modification that effectively reduces the disulfide bond of cystine to form two cysteine residues." [DeltaMass:333]
+def: "A protein modification that effesctively reduces the disulfide bond of cystine to form two cysteine residues." [DeltaMass:333]
 comment: Cross-link 2; this modification destroys the cross-link. From DeltaMass: Treatment of cystine (cys-cys) by reducing agents such as dithiothreitol (DTT) or triscarboxyethylphosphine (TCEP) results in cleavage of the disulphide bond and reduction of the sulphur atom of each molecule to create cysteine.
 subset: PSI-MOD-slim
 xref: DiffAvg: "2.02"
 xref: DiffFormula: "H 2"
-xref: DiffMono: "2.015650"
+xref: DiffMono: "2.015650 "
 xref: Formula: "C 6 H 10 N 2 O 2 S 2"
 xref: MassAvg: "206.29"
 xref: MassMono: "206.018370"
