@@ -19499,7 +19499,7 @@ name: desmosine
 def: "OBSOLETE because redundant and identicssal to MOD:01933. Remap to MOD:01933." [DeltaMass:0]
 comment: From DeltaMass: Average Mass: -58
 xref: DiffAvg: "none"
-xref: DiffFormula: "none"  
+xref: DiffFormula: "none"
 xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -19521,7 +19521,7 @@ xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "M" 
+xref: Origin: "M"
 xref: Source: "none"
 xref: TermSpec: "none"
 is_obsolete: true
