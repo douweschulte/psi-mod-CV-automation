@@ -1,4 +1,4 @@
-name: one-stop-obo-shop
+name: obo-robo-nag
 
 on:
   pull_request:
@@ -36,6 +36,9 @@ jobs:
         OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
         echo "${OUTPUT}"
         echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
+
+    - name: Comment
+      run: gh pr comment ${{ github.event.number }} -b "${{ steps.lint.outputs.changed_items }}"
 
     - name: Fix, format, and version bump main OBO file
       run: |
