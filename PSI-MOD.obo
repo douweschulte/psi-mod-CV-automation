@@ -19377,7 +19377,7 @@ def: "modification from Unimod Chemical derivative" [PubMed:12175151, Unimod:488
 synonym: "DHP" RELATED Unimod-interim []
 synonym: "Dehydropyrrolizidine alkaloid (dehydroretronecine) on cysteines" RELATED Unimod-description []
 xref: DiffAvg: "118.16"
-xref: DiffFormula: "C 8 H 8 N 1"
+xref: DiffFormula: "C 8 H 8 N 1 O 0"
 xref: DiffMono: "118.065674"
 xref: Formula: "C 11 H 13 N 2 S 1"
 xref: MassAvg: "205.30"
@@ -19418,7 +19418,7 @@ def: "modification from Unimod Isotopic label" [PubMed:12643539, Unimod:476]
 synonym: "4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 synonym: "TMAB" RELATED Unimod-interim []
 xref: DiffAvg: "128.19"
-xref: DiffFormula: "C 7 H 14 N 1 O 1"
+xref: DiffFormula: "C 7 H 14 N 1 O 1 I 0"
 xref: DiffMono: "128.107539"
 xref: Formula: "C 7 H 14 N 1 O 1"
 xref: MassAvg: "128.19"
@@ -19436,9 +19436,9 @@ def: "modification from Unimod Isotopic label" [Unimod:477]
 synonym: "TMAB:2H(9)" RELATED Unimod-interim []
 synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 xref: DiffAvg: "137.25"
-xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
+xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: DiffMono: "137.164030"
-xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
+xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: MassAvg: "137.25"
 xref: MassMono: "137.164030"
 xref: Origin: "X"
