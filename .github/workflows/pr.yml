@@ -17,43 +17,37 @@ jobs:
   fix:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:    
     - uses: actions/checkout@v6
       with:
-        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+        fetch-depth: 0
     
     - name: Checkout PR
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: gh pr checkout ${{ github.event.pull_request.number }}
 
+    - name: Get oldest commit
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "oldest=$(gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid' -r)" >> $GITHUB_OUTPUT 
+
     - name: Get changed lines
       id: detect_changes
       run: |
-          if ${{ github.event_name == 'pull_request' }}; then
-            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
-          else
-            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
-          fi
+        echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.outputs.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
 
     - name: Lint main OBO file
       id: lint
       run: |
-        OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr`
-        echo "${OUTPUT}"
-        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
+        echo "result=$(./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
 
-    - name: Fix, format, and version bump main OBO file
+    - name: Fix & format OBO file
       id: fix
       run: |
-        OUTPUT=`./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr`
-        echo "${OUTPUT}"
-        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
-
-    - name: Comment
-      run: gh pr comment ${{ github.event.number }} -b "${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}"
-      env:
-        GH_TOKEN: ${{ github.token }}
+        echo "result=$(./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
 
     - name: Check for Changes
       id: check_changes
@@ -67,4 +61,9 @@ jobs:
         git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
         git commit -am "Fix & format"
         git push
+    
+    - name: Comment
+      run: gh pr comment ${{ github.event.number }} -b '${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}'
+      env:
+        GH_TOKEN: ${{ github.token }}
 
