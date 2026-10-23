@@ -38,6 +38,8 @@ jobs:
     
     - name: Get changed lines 2
       id: detect_changes_2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
           gh pr diff
 

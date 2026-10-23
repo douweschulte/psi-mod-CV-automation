@@ -19513,7 +19513,7 @@ is_obsolete: true
 [Term]
 id: MOD:00950
 name: decomposed carboxymethylated smethionine
-def: "OBSOLETE because this modification has not been seen/reported on since this original publication in 1994 and carboxymethylation of proteins is common enough for this mass shift to have been seen in the intervening 25+ years. modification from DeltaMass" [DeltaMass:3]
+def: "OBSOLETE because this modification has not been seen/reported on since this odriginal publication in 1994 and carboxymethylation of proteins is common enough for this mass shift to have been seen in the intervening 25+ years. modification from DeltaMass" [DeltaMass:3]
 comment: From DeltaMass: Average Mass: -48 Average Mass Change:-48 References:Anal. Biochem. Vol 216 No.1 p141
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
