@@ -24354,7 +24354,7 @@ is_a: MOD:02004 ! O3-acylated L-threonine
 id: MOD:01222
 name: O-formyl-L-serine
 def: "A protein modification that effectively converts an L-serin e residue to O-formyl-L-serine." [PubMed:15627961, PubMed:15799070, Unimod:122#S]
-comment: From Unimod: Can occur under CNBr cleavage conditions (70% HCOOH).
+comment: From Unimod: Can occur under CNBr cleavagse conditions (70% HCOOH).
 synonym: "Formyl" RELATED PSI-MS-label []
 synonym: "Formylation" RELATED Unimod-description []
 xref: DiffAvg: "28.01"

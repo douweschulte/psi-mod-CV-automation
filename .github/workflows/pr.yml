@@ -57,7 +57,7 @@ jobs:
         echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
 
     - name: Comment
-      run: gh pr comment ${{ github.event.number }} -b "${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}"
+      run: gh pr comment ${{ github.event.number }} -b `${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}`
       env:
         GH_TOKEN: ${{ github.token }}
 
