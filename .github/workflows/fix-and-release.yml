@@ -33,16 +33,16 @@ jobs:
     - name: Lint main OBO file
       id: lint
       run: |
-        OUTPUT=`./.github/binaries/psi-obo-helper lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
+        OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
         echo "${OUTPUT}"
         echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
 
     - name: Fix, format, and version bump main OBO file
       run: |
-        ./.github/binaries/psi-obo-helper fix PSI-MOD.obo --bump "${{ github.actor }}"
+        ./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}"
 
     - name: Create newstyle Obo (for Owl conversion)
-      run: ./.github/binaries/psi-obo-helper newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
+      run: ./.github/binaries/obo-robo newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
 
     - name: Generate Owl
       run: |
