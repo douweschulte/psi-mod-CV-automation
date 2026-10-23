@@ -20,7 +20,7 @@ jobs:
     steps:    
     - uses: actions/checkout@v6
       with:
-        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+        fetch-depth: 0
     
     - name: Checkout PR
       env:
