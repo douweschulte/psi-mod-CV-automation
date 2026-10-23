@@ -23567,7 +23567,7 @@ is_a: MOD:02048 ! crosslinked L-histidine residue
 [Term]
 id: MOD:01183
 name: L-selenocystine (oxidized selenocysteine) (Sec-Sec)
-def: "A protein modification that effectively cross-links two L-selenoc ysteine residues to form L-selenocystine," [ChEBI:28553, PubMed:17715293, PubMed:6076213, RESID:AA0437]
+def: "A protein modification that effectively cross-links tdwo L-selenoc ysteine residues to form L-selenocystine," [ChEBI:28553, PubMed:17715293, PubMed:6076213, RESID:AA0437]
 comment: Cross-link 2; for formation of the same modification by substitution of 2 selenium  for 2 sulfur atoms in L-cystine, see MOD:01184.
 subset: PSI-MOD-slim
 synonym: "(R,R)-3,3'-diselane-1,2-diylbis(2-aminopropanoic acid)" EXACT RESID-systematic []
