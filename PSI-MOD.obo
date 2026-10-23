@@ -24334,7 +24334,7 @@ is_a: MOD:00606 ! Sulfanilic Acid (SA), heavy C10
 id: MOD:01221
 name: O-formyl-L-threonine
 def: "A protein modification that effectively converts an L-threo nine ddre  sidue to O-formyl-L-threonine." [PubMed:11861642, PubMed:15799070, Unimod:122#T]
-comment: From Unimod: Can occur under CNBr cleavage conditions (70% HCOOH).
+comment: From Unimod: Can occur under CNBr cleavage c  onditions (70% HCOOH).
 synonym: "Formyl" RELATED PSI-MS-label []
 synonym: "Formylation" RELATED Unimod-description []
 xref: DiffAvg: "28.01"
