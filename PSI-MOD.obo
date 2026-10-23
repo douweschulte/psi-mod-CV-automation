@@ -19521,15 +19521,15 @@ xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "M"
-xref: Source: "none"
+xref: Origin: "M" 
+xref: Source: "none"  
 xref: TermSpec: "none"
 is_obsolete: true
 
 [Term]
 id: MOD:00951
 name: L-gamma-carboxyglutamic  acid with neutral loss of carbon dioxide
-def: "Covalent modification of a peptide or psrotein L-glutamic acid residue to gamma-carboxyglutamic acid with secondary loss of a neutral carbon dioxide molecular fragment." [DeltaMass:58]
+def: "Covalent modification of a peptide or p srotein L-glutamic acid residue to gamma-carboxyglutamic acid with secondary loss of a neutral carbon dioxide molecular fragment." [DeltaMass:58]
 comment: From DeltaMass: Average Mass: -44 Formula:CO2 Average Mass Change:-44 References:Nakamura T, Yu Z, Fainzilber M, Burlingame AL. Protein Sci (1996) 5, 524-530 Mass spectrometric-based revision of the structure of a cysteine-rich peptide toxin with gamma-carboxyglutamic acid, TxVIIA, from the sea snail, Conus textile. Notes: The elimination of CO2 will regenerate glutamate as if there was no modification. However, peaks appearing with an interval of 44 is quite characteristic. It would be noteworthy to remind that loss of 44 from a gamma-carboxyglutamate-containing peptide may be observed not only as a result of spontaneous decarboxylation but also as an artifact under some ionization conditions such as negative ion mode MALDI.
 synonym: "d4CbxGlu" EXACT PSI-MOD-label []
 xref: DiffAvg: "-44.01"
