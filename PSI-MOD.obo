@@ -19377,7 +19377,7 @@ def: "modification from Unimod Chemical derivative" [PubMed:12175151, Unimod:488
 synonym: "DHP" RELATED Unimod-interim []
 synonym: "Dehydropyrrolizidine alkaloid (dehydroretronecine) on cysteines" RELATED Unimod-description []
 xref: DiffAvg: "118.16"
-xref: DiffFormula: "C 8 H 8 N 1"
+xref: DiffFormula: "C 8 H 8 N 1 O 0"
 xref: DiffMono: "118.065674"
 xref: Formula: "C 11 H 13 N 2 S 1"
 xref: MassAvg: "205.30"
