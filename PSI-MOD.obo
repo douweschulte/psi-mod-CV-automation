@@ -16879,7 +16879,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:00798
-name: half cystine
+name: half cystine 6767
 def: "A protein modification that can be regarded as effectively either one half of a cystine cross-link, or a cysteine residue with one hydrogen atom or proton removed." [PubMed:1988019, PubMed:2001356, PubMed:2076469, PubMed:3083866, PubMed:366603, PubMed:7918467, PubMed:8344916, Unimod:374]
 synonym: "Dehydro" RELATED PSI-MS-label []
 synonym: "Half of a disulfide bridge" RELATED Unimod-description []
