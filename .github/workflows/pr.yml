@@ -35,6 +35,11 @@ jobs:
           else
             echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
           fi
+    
+    - name: Get changed lines 2
+      id: detect_changes_2
+      run: |
+          gh pr diff
 
     - name: Lint main OBO file
       id: lint
