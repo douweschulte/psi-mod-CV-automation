@@ -35,6 +35,7 @@ jobs:
       id: lint
       run: |
         OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
+        echo "${OUTPUT}"
         echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
 
     - name: Comment
@@ -46,6 +47,7 @@ jobs:
       id: fix
       run: |
         OUTPUT=`./.github/binaries/obo-robo fix PSI-MOD.obo`
+        echo "${OUTPUT}"
         echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
 
     - name: Comment
