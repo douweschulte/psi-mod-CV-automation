@@ -41,7 +41,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-          gh pr diff
+          gh pr view ${{ github.event.pull_request.number }} --json 'commits'
 
     - name: Show GitHub context
       env:

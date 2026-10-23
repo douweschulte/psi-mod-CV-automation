@@ -19539,7 +19539,7 @@ xref: Formula: "C 5 H 7 N 1 O 3"
 xref: MassAvg: "129.11"
 xref: MassMono: "129.042593"
 xref: Origin: "E"
-xref: Source: "artifact"
+xref: Source: "art ifact"
 xref: TermSpec: "none"
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:00957 ! modified residue with neutral loss of carbon dioxide
