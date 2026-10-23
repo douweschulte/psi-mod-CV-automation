@@ -24156,7 +24156,7 @@ is_a: MOD:01875 ! N6-acylated L-lysine
 [Term]
 id: MOD:01212
 name: iodoacetamide N6-derivatized lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-(carboxamidomethyl)lys vine." [OMSSA:27, PubMed:11510821, PubMed:12422359, PubMed:12686488, Unimod:4#K]
+def: "A protein modification that effectively converts an L-lysin e residue to N6-(carboxamidomethyl)lys vine." [OMSSA:27, PubMed:11510821, PubMed:12422359, PubMed:12686488, Unimod:4#K]
 subset: PSI-MOD-slim
 synonym: "Carbamidomethyl" RELATED PSI-MS-label []
 synonym: "Iodoacetamide derivative" RELATED Unimod-description []

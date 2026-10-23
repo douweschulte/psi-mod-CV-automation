@@ -42,14 +42,12 @@ jobs:
     - name: Lint main OBO file
       id: lint
       run: |
-        OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr'`
-        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
+        echo "result=$(./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
 
     - name: Fix & format OBO file
       id: fix
       run: |
-        OUTPUT=`./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr`
-        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
+        echo "result=$(./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
 
     - name: Check for Changes
       id: check_changes
