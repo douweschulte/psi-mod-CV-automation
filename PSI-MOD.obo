@@ -19424,7 +19424,7 @@ xref: Formula: "C 7 H 14 N 1 O 1"
 xref: MassAvg: "128.19"
 xref: MassMono: "128.107539"
 xref: Origin: "X"
-xref: Source: "artifact"
+xref: Source:  "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:476"
 is_a: MOD:00848 ! reagent derivatized residue
