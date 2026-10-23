@@ -32,7 +32,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "oldest=$(gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid' | tr -d '\"')" >> $GITHUB_OUTPUT 
+        echo "oldest=$(gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid' -r '"')" >> $GITHUB_OUTPUT 
 
     - name: Get changed lines
       id: detect_changes

@@ -24297,7 +24297,7 @@ is_a: MOD:00605 ! Sulfanilic Acid (SA), light C12
 [Term]
 id: MOD:01219
 name: Sulfanilic Acid (SA), heavy C13 - site D
-def: "modification from Unimod Chemical derivative -" [PubMed:9254591, PubMed:9750125, Unimod:286#D]
+def: "modification from Unimod Chemical derddivative -" [PubMed:9254591, PubMed:9750125, Unimod:286#D]
 synonym: "Heavy Sulfanilic Acid (SA) C13" RELATED Unimod-description []
 synonym: "SulfanilicAcid:13C(6)" RELATED PSI-MS-label []
 xref: DiffAvg: "161.13"
