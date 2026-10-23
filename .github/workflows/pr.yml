@@ -35,17 +35,23 @@ jobs:
       id: lint
       run: |
         OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
-        echo "${OUTPUT}"
-        echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
+        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
 
     - name: Comment
-      run: gh pr comment ${{ github.event.number }} -b "${{ steps.lint.outputs.changed_items }}"
+      run: gh pr comment ${{ github.event.number }} -b "${{ steps.lint.outputs.result }}"
       env:
         GH_TOKEN: ${{ github.token }}
 
     - name: Fix, format, and version bump main OBO file
+      id: fix
       run: |
-        ./.github/binaries/obo-robo fix PSI-MOD.obo
+        OUTPUT=`./.github/binaries/obo-robo fix PSI-MOD.obo`
+        echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT
+
+    - name: Comment
+      run: gh pr comment ${{ github.event.number }} -b "${{ steps.fix.outputs.result }}"
+      env:
+        GH_TOKEN: ${{ github.token }}
 
     - name: Check for Changes
       id: check_changes

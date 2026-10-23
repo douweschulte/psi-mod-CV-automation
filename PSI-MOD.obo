@@ -19436,7 +19436,7 @@ def: "modification from Unimod Isotopic label" [Unimod:477]
 synonym: "TMAB:2H(9)" RELATED Unimod-interim []
 synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 xref: DiffAvg: "137.25"
-xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
+xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: DiffMono: "137.164030"
 xref: Formula: "C 7 (1)H 5 (2)H 9 N 1 O 1 "
 xref: MassAvg: "137.25"
