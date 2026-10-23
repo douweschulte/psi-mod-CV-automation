@@ -19460,7 +19460,7 @@ xref: MassAvg: "508.50"
 xref: MassMono: "508.105270"
 xref: Origin: "S"
 xref: Remap: "MOD:00626"
-xref: Source: "artifact"
+xref: Source: "artifact" 
 xref: TermSpec: "none"
 is_obsolete: true
 
