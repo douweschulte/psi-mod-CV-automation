@@ -43,8 +43,8 @@ jobs:
       id: lint
       run: |
         OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr`
-        echoe "${{ steps.commit.outputs.oldest }}"
-        echoe "${{ steps.detect_changes.outputs.changed_lines }}"
+        echo "${{ steps.commit.outputs.oldest }}"
+        echo "${{ steps.detect_changes.outputs.changed_lines }}"
         echo "${OUTPUT}"
 
         echo "result=$(echo "${OUTPUT}")" >> $GITHUB_OUTPUT

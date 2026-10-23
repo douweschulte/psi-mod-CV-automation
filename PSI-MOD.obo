@@ -23537,7 +23537,7 @@ is_a: MOD:01681 ! monomethylated L-aspartic acid
 [Term]
 id: MOD:01182
 name: 6-(S-L-cysteinyl)-8alpha-(-3'-L-histidino)-FAD
-def: "A protein modification that crosslinks a cysteine and a histidine residue by forming the adduct 6-(S-L-cysteinyl)-8alpha-(-3'-L-histidino)-FAD." [PubMed:, RESID:AA0436]
+def: "A protein modification that crosslinks a cysteine atypond a histidine residue by forming the adduct 6-(S-L-cysteinyl)-8alpha-(-3'-L-histidino)-FAD." [PubMed:, RESID:AA0436]
 comment: Cross-link 2.
 subset: PSI-MOD-slim
 synonym: "6-((R)-2-amino-2-carboxyethyl)sulfanyl-8alpha-[4-((S)-2-amino-2-carboxyethyl)imidazol-3-yl]-riboflavin 5'-(trihydrogen diphosphate) 5'->5'-ester with adenosine" EXACT RESID-systematic []
